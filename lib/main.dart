@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// Importamos directamente desde la carpeta donde el generador deposita los archivos
+// MANTENEMOS ESTE IMPORT QUE YA SABEMOS QUE FUNCIONA
 import 'generated_l10n/app_localizations.dart';
 
 void main() {
@@ -32,19 +32,42 @@ class WenostApp extends StatelessWidget {
             );
           }
 
-          // Interfaz principal una vez cargado el motor de idiomas
+          // Interfaz principal con Stack para fondo y elementos
           return Scaffold(
-            appBar: AppBar(
-              title: const Text('Wenost'),
-            ),
-            body: Center(
-              child: Text(
-                localizations.helloWorld,
-                style: const TextStyle(
-                  fontSize: 32,
-                  fontWeight: FontWeight.bold,
+            body: Stack(
+              children: [
+                // 1. Fondo: Imagen que cubre toda la pantalla
+                Container(
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage('assets/images/fondo.jpg'),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
-              ),
+
+                // 2. Contenido: Logo y Texto sobre el fondo
+                Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        'assets/icons/logo.png',
+                        width: 250,
+                      ),
+                      const SizedBox(height: 40),
+                      Text(
+                        localizations.helloWorld,
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 32,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
           );
         },

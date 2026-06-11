@@ -21,4 +21,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  generate: true  # <--- Este es el paso que el error nos está pidiendo.
+  generate: true
+  assets:
+    - assets/icons/
+    - assets/images/
