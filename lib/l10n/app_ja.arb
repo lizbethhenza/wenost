@@ -1,4 +1,4 @@
 {
-  "helloWorld": "こんにちは世界！",
-  "appTitle": "Wenost アプリ"
+  "@@locale": "ja",
+  "wenostTagline": "分散型ネットワーク · 安全 · 信頼 · 革新的"
 }

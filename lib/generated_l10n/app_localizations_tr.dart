@@ -9,8 +9,6 @@ class AppLocalizationsTr extends AppLocalizations {
   AppLocalizationsTr([String locale = 'tr']) : super(locale);
 
   @override
-  String get helloWorld => 'Merhaba Dünya!';
-
-  @override
-  String get appTitle => 'Wenost Uygulaması';
+  String get wenostTagline =>
+      'MERKEZİ OLMAYAN AĞ · GÜVENLİ · GÜVENİLİR · YENİLİKÇİ';
 }

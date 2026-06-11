@@ -1,4 +1,4 @@
 {
-  "helloWorld": "Merhaba Dünya!",
-  "appTitle": "Wenost Uygulaması"
+  "@@locale": "tr",
+  "wenostTagline": "MERKEZİ OLMAYAN AĞ · GÜVENLİ · GÜVENİLİR · YENİLİKÇİ"
 }

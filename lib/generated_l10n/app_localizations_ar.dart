@@ -9,8 +9,5 @@ class AppLocalizationsAr extends AppLocalizations {
   AppLocalizationsAr([String locale = 'ar']) : super(locale);
 
   @override
-  String get helloWorld => 'مرحبا بالعالم!';
-
-  @override
-  String get appTitle => 'تطبيق وينوست';
+  String get wenostTagline => 'شبكة لا مركزية · آمنة · موثوقة · مبتكرة';
 }

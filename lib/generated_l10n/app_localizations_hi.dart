@@ -9,8 +9,6 @@ class AppLocalizationsHi extends AppLocalizations {
   AppLocalizationsHi([String locale = 'hi']) : super(locale);
 
   @override
-  String get helloWorld => 'नमस्ते दुनिया!';
-
-  @override
-  String get appTitle => 'वेनोस्ट ऐप';
+  String get wenostTagline =>
+      'विकेंद्रीकृत नेटवर्क · सुरक्षित · विश्वसनीय · अभिनव';
 }

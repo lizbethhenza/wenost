@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// MANTENEMOS ESTE IMPORT QUE YA SABEMOS QUE FUNCIONA
+// IMPORTANTE: Asegúrate de que esta ruta coincida con la ubicación de tu carpeta de generación
 import 'generated_l10n/app_localizations.dart';
 
 void main() {
@@ -14,16 +14,15 @@ class WenostApp extends StatelessWidget {
     return MaterialApp(
       title: 'Wenost',
 
-      // Conectamos los delegados para el soporte multilingüe
+      // Conectamos los delegados para el soporte multilingüe de los 12 idiomas
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
 
-      // Usamos un Builder para garantizar que el contexto tenga acceso a las localizaciones
       home: Builder(
         builder: (context) {
           final localizations = AppLocalizations.of(context);
 
-          // Estado de carga o espera mientras las traducciones se inyectan
+          // Estado de carga mientras las localizaciones se cargan
           if (localizations == null) {
             return const Scaffold(
               body: Center(
@@ -32,7 +31,6 @@ class WenostApp extends StatelessWidget {
             );
           }
 
-          // Interfaz principal con Stack para fondo y elementos
           return Scaffold(
             body: Stack(
               children: [
@@ -46,22 +44,59 @@ class WenostApp extends StatelessWidget {
                   ),
                 ),
 
-                // 2. Contenido: Logo y Texto sobre el fondo
+                // 2. Contenido: Logo con Resplandor y Eslogan
                 Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Image.asset(
-                        'assets/icons/logo.png',
-                        width: 250,
+                      // Logo con efecto de resplandor blanco
+                      Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.white.withValues(alpha: 0.5),
+                              spreadRadius: 10,
+                              blurRadius: 20,
+                            ),
+                          ],
+                        ),
+                        child: Image.asset(
+                          'assets/icons/logo.png',
+                          width: 250,
+                        ),
                       ),
-                      const SizedBox(height: 40),
-                      Text(
-                        localizations.helloWorld,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 32,
-                          fontWeight: FontWeight.bold,
+
+                      const SizedBox(height: 50),
+
+                      // Eslogan con fondo blanco y letras negras
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 15.0, vertical: 10.0),
+                          decoration: BoxDecoration(
+                            color: Colors.white, // Fondo blanco sólido
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.white.withValues(alpha: 0.8),
+                                spreadRadius: 5,
+                                blurRadius: 15,
+                              ),
+                            ],
+                          ),
+                          child: Text(
+                            localizations.wenostTagline,
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
+                              color:
+                                  Colors.black, // Letras negras para contraste
+                              fontSize: 22,
+                              fontWeight: FontWeight.w900,
+                              letterSpacing: 1.2,
+                            ),
+                          ),
                         ),
                       ),
                     ],

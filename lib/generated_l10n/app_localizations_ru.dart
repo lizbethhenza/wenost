@@ -9,8 +9,6 @@ class AppLocalizationsRu extends AppLocalizations {
   AppLocalizationsRu([String locale = 'ru']) : super(locale);
 
   @override
-  String get helloWorld => 'Привет, мир!';
-
-  @override
-  String get appTitle => 'Приложение Wenost';
+  String get wenostTagline =>
+      'ДЕЦЕНТРАЛИЗОВАННАЯ СЕТЬ · БЕЗОПАСНАЯ · НАДЕЖНАЯ · ИННОВАЦИОННАЯ';
 }

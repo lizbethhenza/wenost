@@ -9,8 +9,5 @@ class AppLocalizationsJa extends AppLocalizations {
   AppLocalizationsJa([String locale = 'ja']) : super(locale);
 
   @override
-  String get helloWorld => 'こんにちは世界！';
-
-  @override
-  String get appTitle => 'Wenost アプリ';
+  String get wenostTagline => '分散型ネットワーク · 安全 · 信頼 · 革新的';
 }

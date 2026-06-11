@@ -9,8 +9,5 @@ class AppLocalizationsZh extends AppLocalizations {
   AppLocalizationsZh([String locale = 'zh']) : super(locale);
 
   @override
-  String get helloWorld => '你好，世界！';
-
-  @override
-  String get appTitle => 'Wenost 应用程序';
+  String get wenostTagline => '去中心化网络 · 安全 · 可信 · 创新';
 }

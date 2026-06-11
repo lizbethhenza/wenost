@@ -1,4 +1,4 @@
 {
-  "helloWorld": "Olá Mundo!",
-  "appTitle": "Aplicativo Wenost"
+  "@@locale": "pt",
+  "wenostTagline": "REDE DESCENTRALIZADA · SEGURA · CONFIÁVEL · INOVADORA"
 }

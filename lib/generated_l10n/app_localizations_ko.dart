@@ -9,8 +9,5 @@ class AppLocalizationsKo extends AppLocalizations {
   AppLocalizationsKo([String locale = 'ko']) : super(locale);
 
   @override
-  String get helloWorld => '안녕하세요!';
-
-  @override
-  String get appTitle => 'Wenost 앱';
+  String get wenostTagline => '탈중앙화 네트워크 · 안전함 · 신뢰성 · 혁신적';
 }

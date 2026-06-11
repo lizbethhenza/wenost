@@ -1,4 +1,4 @@
 {
-  "helloWorld": "你好，世界！",
-  "appTitle": "Wenost 应用程序"
+  "@@locale": "zh",
+  "wenostTagline": "去中心化网络 · 安全 · 可信 · 创新"
 }

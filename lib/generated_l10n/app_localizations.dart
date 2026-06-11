@@ -118,17 +118,11 @@ abstract class AppLocalizations {
     Locale('zh')
   ];
 
-  /// No description provided for @helloWorld.
+  /// No description provided for @wenostTagline.
   ///
   /// In en, this message translates to:
-  /// **'Hello World!'**
-  String get helloWorld;
-
-  /// No description provided for @appTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Wenost App'**
-  String get appTitle;
+  /// **'DECENTRALIZED NETWORK · SECURE · TRUSTED · INNOVATIVE'**
+  String get wenostTagline;
 }
 
 class _AppLocalizationsDelegate

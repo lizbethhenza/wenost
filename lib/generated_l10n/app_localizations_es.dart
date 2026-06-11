@@ -9,8 +9,6 @@ class AppLocalizationsEs extends AppLocalizations {
   AppLocalizationsEs([String locale = 'es']) : super(locale);
 
   @override
-  String get helloWorld => '¡Hola Mundo!';
-
-  @override
-  String get appTitle => 'Aplicación Wenost';
+  String get wenostTagline =>
+      'RED DESCENTRALIZADA · SEGURA · CONFIABLE · INNOVADORA';
 }
