@@ -1,0 +1,6 @@
+# l10n.yaml en la raíz
+arb-dir: lib/l10n
+template-arb-file: app_en.arb
+output-localization-file: app_localizations.dart
+# Esta línea es la que falta para que no se ensucien tus carpetas:
+output-dir: lib/generated_l10n
