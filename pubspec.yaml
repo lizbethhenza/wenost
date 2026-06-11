@@ -4,23 +4,42 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.0.0
+  sdk: ^3.5.0
 
 dependencies:
   flutter:
     sdk: flutter
-  web_socket_channel: ^3.0.1
-  provider: ^6.1.1
   flutter_localizations:
     sdk: flutter
+  # ¡Añadimos intl! Es obligatorio para que el sistema de localización funcione.
+  intl: ^0.20.2 
+  
+  # Red y Comunicación
+  web_socket_channel: ^3.0.1
+  provider: ^6.1.1
+  
+  # Criptografía Nostr
+  dart_nostr: ^10.0.1
+  
+  # Almacenamiento seguro
+  flutter_secure_storage: ^9.0.0
+  
+  # Base de datos local
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+  
+  # Generador de código
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
 
 flutter:
   uses-material-design: true
+  # IMPORTANTE: Esta línea es necesaria para que Flutter genere el archivo de localización
   generate: true
   assets:
     - assets/icons/
