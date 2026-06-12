@@ -9,5 +9,15 @@ class AppLocalizationsKo extends AppLocalizations {
   AppLocalizationsKo([String locale = 'ko']) : super(locale);
 
   @override
-  String get wenostTagline => '탈중앙화 네트워크 · 안전함 · 신뢰성 · 혁신적';
+  String get loginKeyButton => '키로 로그인';
+
+  @override
+  String get newUserButton => '새 사용자';
+
+  @override
+  String get securityWarning =>
+      '중요: 키를 안전한 곳에 보관하십시오. 분실 시 Wenost는 복구할 수 없습니다.';
+
+  @override
+  String get wenostTagline => '분산화 • 안전 • 신뢰 • 혁신';
 }

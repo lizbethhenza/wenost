@@ -41,12 +41,10 @@ class _WenostScreenState extends State<WenostScreen> {
     _checkStoredKeys();
   }
 
-  // Nueva función para recuperar la llave existente al iniciar
   Future<void> _checkStoredKeys() async {
     final privateKey = await _storage.read(key: 'private_key');
     if (privateKey != null) {
       debugPrint("Llave encontrada en almacenamiento: $privateKey");
-      // Aquí podrías agregar lógica para navegar automáticamente al perfil si quisieras
     }
   }
 
@@ -108,9 +106,12 @@ class _WenostScreenState extends State<WenostScreen> {
                   _buildCintaEslogan(
                       localizations?.wenostTagline ?? "Bienvenido a Wenost"),
                   const SizedBox(height: 40),
-                  _buildButton("NUEVO USUARIO", () => _generarLlaves(context)),
+                  _buildButton(localizations?.newUserButton ?? "NUEVO USUARIO",
+                      () => _generarLlaves(context)),
                   const SizedBox(height: 10),
-                  _buildButton("INGRESAR CON LLAVE", () {}),
+                  _buildButton(
+                      localizations?.loginKeyButton ?? "INGRESAR CON LLAVE",
+                      () {}),
                 ],
               ),
             ),
@@ -124,7 +125,7 @@ class _WenostScreenState extends State<WenostScreen> {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 25),
       child: Text(
-        text,
+        text.toUpperCase(),
         textAlign: TextAlign.center,
         style: const TextStyle(
           color: Colors.black,

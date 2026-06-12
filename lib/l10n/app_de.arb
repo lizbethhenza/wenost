@@ -1,4 +1,6 @@
 {
-  "@@locale": "de",
-  "wenostTagline": "DEZENTRALES NETZWERK · SICHER · VERTRAUENSWÜRDIG · INNOVATIV"
+  "loginKeyButton": "MIT SCHLÜSSEL ANMELDEN",
+  "newUserButton": "NEUER BENUTZER",
+  "securityWarning": "WICHTIG: Bewahren Sie Ihre Schlüssel an einem sicheren Ort auf. Wenost kann sie nicht wiederherstellen, wenn Sie sie verlieren.",
+  "wenostTagline": "DEZENTRAL • SICHER • ZUVERLÄSSIG • INNOVATIV"
 }

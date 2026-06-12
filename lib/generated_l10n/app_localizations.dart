@@ -118,10 +118,28 @@ abstract class AppLocalizations {
     Locale('zh')
   ];
 
+  /// No description provided for @loginKeyButton.
+  ///
+  /// In en, this message translates to:
+  /// **'ENTER WITH KEY'**
+  String get loginKeyButton;
+
+  /// No description provided for @newUserButton.
+  ///
+  /// In en, this message translates to:
+  /// **'NEW USER'**
+  String get newUserButton;
+
+  /// No description provided for @securityWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'IMPORTANT: Keep your keys in a safe place. Wenost cannot recover them if you lose them.'**
+  String get securityWarning;
+
   /// No description provided for @wenostTagline.
   ///
   /// In en, this message translates to:
-  /// **'DECENTRALIZED NETWORK · SECURE · TRUSTED · INNOVATIVE'**
+  /// **'DECENTRALIZED • SECURE • RELIABLE • INNOVATIVE'**
   String get wenostTagline;
 }
 

@@ -9,5 +9,14 @@ class AppLocalizationsZh extends AppLocalizations {
   AppLocalizationsZh([String locale = 'zh']) : super(locale);
 
   @override
-  String get wenostTagline => '去中心化网络 · 安全 · 可信 · 创新';
+  String get loginKeyButton => '使用密钥登录';
+
+  @override
+  String get newUserButton => '新用户';
+
+  @override
+  String get securityWarning => '重要提示：请将您的密钥保存在安全的地方。如果您丢失了密钥，Wenost 无法找回。';
+
+  @override
+  String get wenostTagline => '去中心化 • 安全 • 可靠 • 创新';
 }

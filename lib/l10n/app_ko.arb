@@ -1,4 +1,6 @@
 {
-  "@@locale": "ko",
-  "wenostTagline": "탈중앙화 네트워크 · 안전함 · 신뢰성 · 혁신적"
+  "loginKeyButton": "키로 로그인",
+  "newUserButton": "새 사용자",
+  "securityWarning": "중요: 키를 안전한 곳에 보관하십시오. 분실 시 Wenost는 복구할 수 없습니다.",
+  "wenostTagline": "분산화 • 안전 • 신뢰 • 혁신"
 }

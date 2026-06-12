@@ -26,7 +26,6 @@ class IdentidadScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // Fondo consistente con la pantalla de inicio
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
@@ -36,7 +35,6 @@ class IdentidadScreen extends StatelessWidget {
             ),
           ),
           Container(color: Colors.black.withValues(alpha: 0.6)),
-
           Center(
             child: SingleChildScrollView(
               padding: const EdgeInsets.all(30.0),
@@ -52,7 +50,21 @@ class IdentidadScreen extends StatelessWidget {
                         fontSize: 22,
                         fontWeight: FontWeight.bold),
                   ),
-                  const SizedBox(height: 40),
+                  const SizedBox(height: 15),
+                  // ADVERTENCIA RECUPERADA
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    child: Text(
+                      "IMPORTANTE: Guarda tus llaves en un lugar seguro. Wenost no puede recuperarlas si las pierdes.",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.amberAccent,
+                        fontSize: 14,
+                        fontStyle: FontStyle.italic,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 30),
                   _buildKeyBox(context, "LLAVE PÚBLICA", publicKey, false),
                   const SizedBox(height: 20),
                   _buildKeyBox(context, "LLAVE PRIVADA", privateKey, true),
@@ -84,7 +96,6 @@ class IdentidadScreen extends StatelessWidget {
 
   Widget _buildKeyBox(
       BuildContext context, String label, String key, bool isPrivate) {
-    // Azul para pública, Rojo para privada
     final Color colorLlave =
         isPrivate ? const Color(0xFFFF5252) : const Color(0xFF40C4FF);
 
@@ -113,8 +124,7 @@ class IdentidadScreen extends StatelessWidget {
                     color: colorLlave,
                     fontFamily: 'monospace',
                     fontSize: 14,
-                    fontWeight: FontWeight.w900, // Máxima legibilidad
-                    // Borde extremadamente sutil y limpio para definir el texto
+                    fontWeight: FontWeight.w900,
                     shadows: const [
                       Shadow(
                           offset: Offset(0.5, 0.5),

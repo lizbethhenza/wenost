@@ -1,4 +1,6 @@
 {
-  "@@locale": "es",
-  "wenostTagline": "RED DESCENTRALIZADA · SEGURA · CONFIABLE · INNOVADORA"
+  "loginKeyButton": "INGRESAR CON LLAVE",
+  "newUserButton": "NUEVO USUARIO",
+  "securityWarning": "IMPORTANTE: Guarda tus llaves en un lugar seguro. Wenost no puede recuperarlas si las pierdes.",
+  "wenostTagline": "RED DESCENTRALIZADA • SEGURA • CONFIABLE • INNOVADORA"
 }

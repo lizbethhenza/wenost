@@ -9,6 +9,15 @@ class AppLocalizationsTr extends AppLocalizations {
   AppLocalizationsTr([String locale = 'tr']) : super(locale);
 
   @override
-  String get wenostTagline =>
-      'MERKEZİ OLMAYAN AĞ · GÜVENLİ · GÜVENİLİR · YENİLİKÇİ';
+  String get loginKeyButton => 'ANAHTARLA GİRİŞ';
+
+  @override
+  String get newUserButton => 'YENİ KULLANICI';
+
+  @override
+  String get securityWarning =>
+      'ÖNEMLİ: Anahtarlarınızı güvenli bir yerde saklayın. Kaybederseniz Wenost onları kurtaramaz.';
+
+  @override
+  String get wenostTagline => 'MERKEZİYETSİZ • GÜVENLİ • GÜVENİLİR • YENİLİKÇİ';
 }

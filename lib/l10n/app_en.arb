@@ -1,4 +1,6 @@
 {
-  "@@locale": "en",
-  "wenostTagline": "DECENTRALIZED NETWORK · SECURE · TRUSTED · INNOVATIVE"
+  "loginKeyButton": "ENTER WITH KEY",
+  "newUserButton": "NEW USER",
+  "securityWarning": "IMPORTANT: Keep your keys in a safe place. Wenost cannot recover them if you lose them.",
+  "wenostTagline": "DECENTRALIZED • SECURE • RELIABLE • INNOVATIVE"
 }

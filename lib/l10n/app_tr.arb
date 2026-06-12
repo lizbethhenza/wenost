@@ -1,4 +1,6 @@
 {
-  "@@locale": "tr",
-  "wenostTagline": "MERKEZİ OLMAYAN AĞ · GÜVENLİ · GÜVENİLİR · YENİLİKÇİ"
+  "loginKeyButton": "ANAHTARLA GİRİŞ",
+  "newUserButton": "YENİ KULLANICI",
+  "securityWarning": "ÖNEMLİ: Anahtarlarınızı güvenli bir yerde saklayın. Kaybederseniz Wenost onları kurtaramaz.",
+  "wenostTagline": "MERKEZİYETSİZ • GÜVENLİ • GÜVENİLİR • YENİLİKÇİ"
 }

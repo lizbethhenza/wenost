@@ -1,4 +1,6 @@
 {
-  "@@locale": "ja",
-  "wenostTagline": "分散型ネットワーク · 安全 · 信頼 · 革新的"
+  "loginKeyButton": "鍵でログイン",
+  "newUserButton": "新規ユーザー",
+  "securityWarning": "重要：鍵は安全な場所に保管してください。紛失した場合、Wenostは復元できません。",
+  "wenostTagline": "分散型 • 安全 • 信頼性 • 革新的"
 }

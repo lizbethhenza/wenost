@@ -9,5 +9,14 @@ class AppLocalizationsJa extends AppLocalizations {
   AppLocalizationsJa([String locale = 'ja']) : super(locale);
 
   @override
-  String get wenostTagline => '分散型ネットワーク · 安全 · 信頼 · 革新的';
+  String get loginKeyButton => '鍵でログイン';
+
+  @override
+  String get newUserButton => '新規ユーザー';
+
+  @override
+  String get securityWarning => '重要：鍵は安全な場所に保管してください。紛失した場合、Wenostは復元できません。';
+
+  @override
+  String get wenostTagline => '分散型 • 安全 • 信頼性 • 革新的';
 }

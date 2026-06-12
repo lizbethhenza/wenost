@@ -9,6 +9,15 @@ class AppLocalizationsDe extends AppLocalizations {
   AppLocalizationsDe([String locale = 'de']) : super(locale);
 
   @override
-  String get wenostTagline =>
-      'DEZENTRALES NETZWERK · SICHER · VERTRAUENSWÜRDIG · INNOVATIV';
+  String get loginKeyButton => 'MIT SCHLÜSSEL ANMELDEN';
+
+  @override
+  String get newUserButton => 'NEUER BENUTZER';
+
+  @override
+  String get securityWarning =>
+      'WICHTIG: Bewahren Sie Ihre Schlüssel an einem sicheren Ort auf. Wenost kann sie nicht wiederherstellen, wenn Sie sie verlieren.';
+
+  @override
+  String get wenostTagline => 'DEZENTRAL • SICHER • ZUVERLÄSSIG • INNOVATIV';
 }

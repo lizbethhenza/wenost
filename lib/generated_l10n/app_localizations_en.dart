@@ -9,6 +9,15 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get wenostTagline =>
-      'DECENTRALIZED NETWORK · SECURE · TRUSTED · INNOVATIVE';
+  String get loginKeyButton => 'ENTER WITH KEY';
+
+  @override
+  String get newUserButton => 'NEW USER';
+
+  @override
+  String get securityWarning =>
+      'IMPORTANT: Keep your keys in a safe place. Wenost cannot recover them if you lose them.';
+
+  @override
+  String get wenostTagline => 'DECENTRALIZED • SECURE • RELIABLE • INNOVATIVE';
 }
