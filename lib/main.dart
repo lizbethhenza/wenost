@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:dart_nostr/dart_nostr.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
@@ -33,6 +35,21 @@ class WenostScreen extends StatefulWidget {
 class _WenostScreenState extends State<WenostScreen> {
   final _storage = const FlutterSecureStorage();
 
+  @override
+  void initState() {
+    super.initState();
+    _checkStoredKeys();
+  }
+
+  // Nueva función para recuperar la llave existente al iniciar
+  Future<void> _checkStoredKeys() async {
+    final privateKey = await _storage.read(key: 'private_key');
+    if (privateKey != null) {
+      debugPrint("Llave encontrada en almacenamiento: $privateKey");
+      // Aquí podrías agregar lógica para navegar automáticamente al perfil si quisieras
+    }
+  }
+
   Future<void> _generarLlaves(BuildContext context) async {
     final keyPair = Nostr.instance.keys.generateKeyPair();
     await _storage.write(key: 'private_key', value: keyPair.private);
@@ -40,7 +57,6 @@ class _WenostScreenState extends State<WenostScreen> {
     if (!mounted) return;
 
     Navigator.push(
-      // ignore: use_build_context_synchronously
       context,
       MaterialPageRoute(
         builder: (context) => IdentidadScreen(
@@ -107,16 +123,14 @@ class _WenostScreenState extends State<WenostScreen> {
   Widget _buildCintaEslogan(String text) {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 25),
-      // Sin decoración (sin border, sin color, sin sombras) para eliminar la caja
       child: Text(
         text,
         textAlign: TextAlign.center,
         style: const TextStyle(
-          color: Colors.black, // Letras negras
+          color: Colors.black,
           fontSize: 30,
           fontWeight: FontWeight.w900,
           shadows: [
-            // Resplandor blanco alrededor de las letras negras
             Shadow(color: Colors.white, blurRadius: 10),
             Shadow(color: Colors.white, blurRadius: 10),
           ],
